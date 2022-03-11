@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByC Estetica y Peluqueria</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="gridContainer"> <!-- comienza contenedor!-->
+        <header class="header">
+          <div>
+                <a href="index1.html">
+                <img class="avatar" src="img/logo.png.jpeg" width="200px" height="200px" alt="logo"></a>
+                <div class="textoCentrado"> 
+                    <h3>"La <em>belleza</em> comienza en el momento en que decides ser <em>tu misma."</em></h3>
+                </div> 
+          </div>
+        </header>
+        <nav class="botonera flexContainer"> <!-- barra de navegacion-->       
+           <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="tratamientos.html">Tratamientos</a></li>
+                <li><a href="promociones.html" target="blank">Promociones</a></li>
+                <li><a href="contacto.html" target="blank">Contacto</a></li>
+           </ul> 
+        </nav>
+        <main class="textoCentrado cuerpo"> <!-- Empieza formulario-->
+           <h2 id="titulo">
+               Dejanos tu consulta o comentario
+           </h2>
+           <form>
+              <label id="tituloContacto" for="nombre">Nombre</label>
+              <input type="text" name="Nombre" required>
+           </form>
+           <br>
+           <form>
+              <label id="tituloContacto" for="edad">Edad</label>
+              <select name="edad" id="edad">
+                <option value="20a30">20 a 30 años</option>
+                <option value="30a40">31 a 40 años</option>
+                <option value="40a50">41 a 50 años</option>
+                <option value="50mas">50 o mas años</option>
+              </select>
+           </form>
+           <br>
+           <form>
+              <label id="tituloContacto" for="sector">Sector</label>
+              <br>
+                <label id="tituloContacto" for="Estetica">Estetica</label>
+                <input type="radio" name="sector" value="estetica"/>
+                <label id="tituloContacto" for="peluqueria">Peluqueria</label>
+                <input type="radio" name="sector" value="peluqueria">
+           </form>
+           <br>
+           <form>
+              <label id="tituloContacto" for="email">Email</label>
+              <input type="email" name="email" placeholder="nombre@ejemplo.com/" required>
+           </form>
+           <br>
+           <form>
+              <input type="text" name="cometarios" placeholder="Lo que quieras contarnos" required>
+           </form>
+           <form> <!-- botones-->
+              <input class="botonEnviar" type="submit" value="Enviar"/>
+              <input class="botonLimpiar" type="reset" value="Limpiar"/>
+              <input class="botonSin" type="button" value="Sin acciones"/>
+           </form>
+        </main><!-- Termina formulario-->
+        <aside class="textoCentrado texto">
+          <br>
+          <div>
+              <iframe class="avatar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.5028626360568!2d-64.14567698497115!3d-31.42782038140028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bd344a42e885%3A0x94d665bf62bf02d7!2sLisandro%20de%20la%20Torre%201656%2C%20X5006%20AYB%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1644789394861!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div>
+        </aside>
+        <footer class="pie foot">
+           <div class="pie__titulo">
+              <p>
+              seguinos en nuestras redes 
+              <a href="https://www.instagram.com/b_c_peluqueriayestetica/">
+                  <img class="pie__icon--sm" src="img/instagram.png" width="20px" height="20px" alt="instagram">
+              </a>
+              </p>
+              <p class="textoCentrado">
+              @Derechos reservados y creado por
+              <a href="https://www.instagram.com/china.2.2/">
+                 <img class="pie__icon--s avatar" src="img/logochina.jpg" alt="logo">
+              </a>
+              </p>
+           </div>
+       </footer>
+   </div>
+</body>
+</html>

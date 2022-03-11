@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.gridContainer{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "botonera"
+    "cuerpo" "texto" "foot";
+}
+.flexContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*selectores de etiqueta*/
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+header div h3{
+    font-family: 'Parisienne', cursive;
+    font-size: 20px;
+    color: #000
+}
+nav{
+    background-color: #7fbfda;
+    padding: 5px 20px;
+}
+    nav ul li{
+
+        margin-right: 5px;
+        height: 20px;
+        display: inline-block;
+}
+        nav ul li a{
+            list-style: none;
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+            display: inline-block;
+}
+        nav ul li a:hover{
+            color: blue;
+            font-weight: 600;
+        }
+ol{
+    list-style: circle;
+    color: #7fbfda;
+}
+ul{
+    list-style: square;
+}     
+
+/*clases*/
+.textoCentrado{
+    text-align: center;
+}
+.textoIzquierda{
+    text-align: left;
+}
+.header__frase{
+    display: inline;
+    margin-left: -30px;
+}
+.parrafo{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.parrafoPie{
+    font-size: 1rem;
+}
+.avatar{
+    border-radius: 50%;
+    border-style: groove;
+}
+.main__texto{
+    font-size: large;
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.main__img--center{
+    margin: auto;
+    padding: 50px auto;
+}
+.pie{
+    display: inline;
+}
+.pie__titulo{
+    font-size: medium;
+    font-weight: bolder;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-top: solid 2px #7fbfda;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.pie__icon--sm{
+    width: 20px;
+}
+.pie__icon--s{
+    width: 50px;
+}
+#titulo{
+    font-size: x-large;
+}
+#titulo2{
+    font-size: x-large;
+}
+#titulo3{
+    font-size: large;
+}
+#tituloContacto{
+    font-size: medium;
+}
+
+.lista{
+    font-size: large;
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box
+}
+.lista__items--md{
+    font-size: medium;
+}
+.botonEnviar{
+    margin-right: 20px;
+    background-color: #7fbfda;
+    border-color: whitesmoke; border-radius: 20mm;
+    font-weight: bold; font-size: 20px;
+    cursor:pointer;
+}
+.botonLimpiar{
+    margin-right: 20px;
+    background-color: #7fbfda;
+    border-color: whitesmoke; border-radius: 20mm;
+    font-weight: bold; font-size: 20px;
+    cursor:pointer;
+}
+.botonSin{
+    margin-right: 20px;
+    background-color: #7fbfda;
+    border-color: whitesmoke; border-radius: 20mm;
+    font-weight: bold; font-size: 20px;
+    cursor:pointer;
+}
+/*incluyendo Grid*/
+.header{
+    grid-area:header;
+}
+.botonera {
+    grid-area: botonera;
+}
+.cuerpo {
+    grid-area: cuerpo;
+}
+.texto {
+    grid-area: texto;
+}
+.foot {
+    grid-area: foot;
+}
+.center{
+    justify-items: center;
+    justify-content: center;
+}
+.aline{
+    align-items: center;
+}
+
+/* Media Queries */
+@media only screen and (min-whidth: 768px){
+    .gridContainer{ 
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "botonera"
+        "cuerpo" "texto" "foot";
+    }
+}
+@media (min-width: 1024px){
+    .gridContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header header" "botonera botonera" "cuerpo texto" 
+        "foot foot";
+    }
+    .flexAside{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+}
